@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemple-3</title>
+    <title>exemple-3</title>
+    <script>
+        // declaration des variables 
+        var randomNumber;
+        var userInput;
+        var message;
+        // entrer: saiser 
+         randomNumber = Math.floor(Math.random() * 100);
+         userInput = prompt("salut! saiser un nombre entre 1 et 100");
+        // treatment 
+        var n = parseInt(userInput);
+        if (randomNumber > userInput) {
+
+            message = "c'est plus grande que " + " " + userInput;
+
+        }
+
+        else{
+
+            message = "c'est plus petit que " + " " + userInput;
+        }
+        // sortie: Affichage
+        alert(message);
+    </script>
 </head>
 <body>
-    <script>
-        var randomNumber = Math.floor(Math.random() * 100)
-
-        var reuslt;
-        var userInput = 49
-        var itIsSmall = "C'est plus petit que " + userInput + ", essayez plus"
-        var itIsBigger = "C'est plus grand que " + userInput + ", essayez plus"
-            if (userInput == randomNumber){
-                 reuslt = winMessage;
-            } else if (userInput > randomNumber){
-                    reuslt = itIsSmall
-            } else if (userInput < randomNumber){
-                    reuslt = itIsBigger
-                }
-        alert(reuslt)
-    </script>
+    
 </body>
 </html>
