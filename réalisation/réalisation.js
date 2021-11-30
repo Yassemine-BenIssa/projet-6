@@ -1,4 +1,4 @@
-// declaration des variables 
+// déclaration des variables 
 var btn;
 var output;
 var number;
@@ -38,7 +38,7 @@ btn.addEventListener('click', function(){
         
           }
     }else {
-        output.innerHTML = "c'est rate"
+        output.innerHTML = "c'est perdant!"
         attemptOutPut.innerHTML= "0-tentative"
     }
 
