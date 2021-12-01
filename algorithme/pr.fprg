@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-01 11:52:07 "/>
+        <attribute name="created" value="c29saWNvZGU7REVTS1RPUC1VVEc0T0lKOzIwMjEtMTItMDE7IjExOjM3OjMzICI7MzEzMw=="/>
+        <attribute name="edited" value="c29saWNvZGU7REVTS1RPUC1VVEc0T0lKOzIwMjEtMTItMDE7IjExOjUyOjA3ICI7MjszMjQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number" type="Real" array="False" size=""/>
+            <assign variable="number" expression="random(100)"/>
+            <declare name="userInput" type="Real" array="False" size=""/>
+            <output expression="&quot;salut!entr&#233; un nombre entre 1 et 100&quot;" newline="True"/>
+            <input variable="userInput"/>
+            <while expression="userInput!=number">
+                <if expression="userInput&lt;number">
+                    <then>
+                        <output expression="&quot;le numero que vous entr&#233; est plus petit&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;le numero que vous entr&#233; est plus grand&quot;" newline="True"/>
+                    </else>
+                </if>
+                <input variable="userInput"/>
+            </while>
+            <output expression="&quot;bravo ! vous &#233;tes gangez&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

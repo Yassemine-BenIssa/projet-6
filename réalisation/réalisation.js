@@ -14,7 +14,7 @@ var attempt;
  attempt =10;
  // traitement 
 
-btn.addEventListener('click', function(){
+function Entrer(){
     attempt--;
     nombreDeviner = document.getElementById('userInput').value;
     if(attempt>0){
@@ -44,6 +44,6 @@ btn.addEventListener('click', function(){
 
   
 
-});
+};
 
     
